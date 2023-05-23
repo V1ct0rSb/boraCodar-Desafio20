@@ -1,0 +1,74 @@
+body {
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid red;
+}
+
+.title {
+  margin-bottom: 1690px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 60px;
+}
+
+/* Display Grid */
+.grid-container {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "a b"
+    "a c"
+    "d d"
+    "h e"
+    "f e"
+    "g g";
+}
+
+.grid-container img {
+  border-radius: 10px;
+}
+
+.grid-container .image1 {
+  grid-area: a;
+}
+
+.grid-container .image2 {
+  grid-area: b;
+}
+.grid-container .image3 {
+  grid-area: c;
+}
+.grid-container .image4 {
+  grid-area: d;
+}
+.grid-container .image5 {
+  grid-area: e;
+}
+.grid-container .image6 {
+  grid-area: f;
+}
+.grid-container .image7 {
+  grid-area: g;
+}
+.grid-container .image8 {
+  grid-area: h;
+}
+
+/* Animação */
+.grid-container img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  opacity: 0.8;
+}
